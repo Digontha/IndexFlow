@@ -1,0 +1,29 @@
+{
+  "name": "indexflow",
+  "version": "1.0.0",
+  "description": "IndexFlow workspace - A monorepo for backend and frontend applications",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "yarn install",
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint",
+    "start": "yarn workspace backend start"
+  },
+  "keywords": [
+    "indexflow",
+    "monorepo",
+    "workspace"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0"
+  }
+}
